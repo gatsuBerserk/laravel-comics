@@ -1,1 +1,28 @@
 //
+
+@import"partials/variables";
+@import"partials/common"; 
+
+div.header{ 
+    @include container;
+    padding-bottom: 1rem;
+    
+
+    li{
+        list-style: none; 
+        margin: 1rem; 
+        display: inline-block;
+        
+
+        :hover{
+            color: $primaryColor;
+        }
+    } 
+
+    a{
+        text-decoration:none; 
+        color: black;
+        text-transform: uppercase; 
+
+}
+}

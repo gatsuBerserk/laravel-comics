@@ -1,0 +1,25 @@
+div.header {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+div.header li {
+  list-style: none;
+  margin: 1rem;
+  display: inline-block;
+}
+
+div.header li :hover {
+  color: rgb(2, 130, 249);
+}
+
+div.header a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+
