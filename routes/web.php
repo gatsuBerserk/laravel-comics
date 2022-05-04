@@ -14,5 +14,19 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('layouts.home');
+    $nav = config("nav");
+    $comics = config("comics");
+    return view('layouts.home', ["comics"=> $comics, "nav"=> $nav]);
+}); 
+
+Route::get('header', function () {
+    $nav = config("nav");
+    return view('section.header', ["nav"=> $nav]);
+});
+
+
+Route::get('main', function () {
+    
+    $comics = config("comics");
+    return view('section.main', ["comics"=> $comics]);
 });
