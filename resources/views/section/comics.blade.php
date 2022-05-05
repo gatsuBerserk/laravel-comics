@@ -12,7 +12,7 @@
                 
                 {{-- Soluzione migliore, gli diamo come come campo index dato alla route l' $index dell'array --}}
                 <a href="{{route("comic-book", ['index' => $index])}}"><p>{{$item["title"]}} {{ $item["series"]}}</p></a>
-            </div>
+            </div> 
             @endforeach 
        </div>
 </div>
