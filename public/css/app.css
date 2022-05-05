@@ -9,7 +9,7 @@ div.header {
   min-width: 1200px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   padding-bottom: 1rem;
 }
@@ -20,6 +20,10 @@ div.header li {
 }
 div.header li :hover {
   color: rgb(2, 130, 249);
+}
+div.header li :active,
+div.header li .active {
+  background-color: yellow;
 }
 div.header a {
   text-decoration: none;
@@ -60,21 +64,27 @@ div.wrapper-comics div.flag p {
   text-transform: uppercase;
 }
 div.wrapper-comics div.comics-wrapper {
+  padding-bottom: 2rem;
   width: 75%;
   min-width: 1200px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
 div.wrapper-comics div.comics-wrapper div.cards {
-  margin: 2rem;
-  margin-top: 4rem;
+  margin: 2.5rem;
   width: 200px;
+  height: 300px;
+  color: white;
 }
 div.wrapper-comics div.comics-wrapper div.cards img {
   height: 100%;
+}
+div.wrapper-comics div.comics-wrapper div.cards a {
+  text-decoration: none;
+  color: white;
 }
 div.wrapper-comics .btn {
   background-color: rgb(2, 130, 249);

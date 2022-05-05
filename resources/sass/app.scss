@@ -12,19 +12,24 @@ div.header{
         list-style: none; 
         margin: 1rem; 
         display: inline-block;
-        
-
         :hover{
             color: $primaryColor;
         }
+       
+        :active, 
+        .active{
+                background-color:yellow;
+            } 
+       
     } 
+        a{
+            text-decoration:none; 
+            color: black;
+            text-transform: uppercase; 
+            
+        }
 
-    a{
-        text-decoration:none; 
-        color: black;
-        text-transform: uppercase; 
-
-}
+        
 } 
 
 section.jumbotron{
@@ -63,16 +68,22 @@ div.wrapper-comics{
         }
     }
     div.comics-wrapper{ 
+        padding-bottom: 2rem;
         @include container;
         flex-wrap: wrap;
         div.cards{
-        margin: 2rem;
-        margin-top:4rem ;
+        margin: 2.5rem;
         width:200px;
+        height: 300px;
+        color: white;
        img{
            height: 100%;
            
        } 
+       a{
+           text-decoration: none;
+           color: white;
+       }
     }
     
     } 

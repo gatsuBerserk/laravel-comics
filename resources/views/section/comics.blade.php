@@ -8,15 +8,11 @@
            @foreach ($comics as $item) 
             <div class="cards">  
                 <img src="{{$item["thumb"]}}" alt=""> 
-                <p>{{$item["title"]}} {{ $item["series"]}}</p>
+                <a href=""><p>{{$item["title"]}} {{ $item["series"]}}</p></a>
             </div>
             @endforeach 
        </div>
-             
-            
-    </div>
 </div>
 
-    
-</div>  
-@endsection
+
+@endsection 

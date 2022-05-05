@@ -17,16 +17,10 @@ Route::get('/', function () {
     $nav = config("nav");
     $comics = config("comics");
     return view('layouts.home', ["comics"=> $comics, "nav"=> $nav]);
-}); 
-
-Route::get('header', function () {
-    $nav = config("nav");
-    return view('section.header', ["nav"=> $nav]);
-});
-
+})-> name("home"); 
 
 Route::get('comics', function () {
     $nav = config("nav");
     $comics = config("comics");
     return view('section.comics', ["comics"=> $comics, "nav"=> $nav]);
-});
+})-> name("comics");

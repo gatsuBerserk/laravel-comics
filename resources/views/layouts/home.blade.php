@@ -10,14 +10,10 @@
 
     </head>
     <body> 
-       
         @include('section.header')
         
-            @yield('comics')
+        @yield('comics')
         
-             
-      
-
         @include("section.footer")
     </body>
 </html>
