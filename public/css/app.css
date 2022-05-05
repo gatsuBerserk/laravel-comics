@@ -1,5 +1,12 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 div.header {
   width: 75%;
+  min-width: 1200px;
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
@@ -20,10 +27,56 @@ div.header a {
   text-transform: uppercase;
 }
 
-div.wrapper-main {
-  background-color: rgb(48, 48, 48);
+section.jumbotron {
+  height: 500px;
 }
-div.wrapper-main .btn {
+section.jumbotron figure {
+  height: 100%;
+  width: 100%;
+  min-width: 1200px;
+  background: url("/img/jumbotron.jpg") no-repeat;
+  background-size: cover;
+}
+
+div.wrapper-comics {
+  background-color: rgb(48, 48, 48);
+  min-width: 1200px;
+  position: relative;
+}
+div.wrapper-comics div.flag {
+  line-height: 50px;
+  text-align: center;
+  width: 150px;
+  height: 50px;
+  background-color: rgb(2, 130, 249);
+  color: white;
+  position: absolute;
+  left: 23%;
+  top: 0;
+  transform: translate(-50%, -50%);
+}
+div.wrapper-comics div.flag p {
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+div.wrapper-comics div.comics-wrapper {
+  width: 75%;
+  min-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+div.wrapper-comics div.comics-wrapper div.cards {
+  margin: 2rem;
+  margin-top: 4rem;
+  width: 200px;
+}
+div.wrapper-comics div.comics-wrapper div.cards img {
+  height: 100%;
+}
+div.wrapper-comics .btn {
   background-color: rgb(2, 130, 249);
   text-transform: uppercase;
   font-weight: bold;
@@ -32,30 +85,10 @@ div.wrapper-main .btn {
   width: 150px;
   border: transparent;
 }
-div.wrapper-main .btn a {
+div.wrapper-comics .btn a {
   text-decoration: none;
   color: whitesmoke;
 }
-div.wrapper-main .btn a:hover {
-  color: yellow;
-}
-
-section.main-jumbo {
-  height: 400px;
-  background: url("../img/jumbotron.jpg") no-repeat;
-  background-size: 100%;
-}
-
-div.cards {
-  width: 75%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  padding-top: 1.5rem;
-}
-div.cards h1 {
-  margin-top: 0;
+div.wrapper-comics .btn a:hover {
   color: yellow;
 }

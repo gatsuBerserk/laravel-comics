@@ -25,10 +25,57 @@ div.header{
         text-transform: uppercase; 
 
 }
+} 
+
+section.jumbotron{
+    height: 500px; 
+        figure{
+            height: 100%;
+            width: 100%; 
+            min-width: 1200px; 
+            background: url("/img/jumbotron.jpg") no-repeat;
+            background-size: cover;
+        } 
+        
 }
 
-div.wrapper-main{
+div.wrapper-comics{
     background-color: $secondaryColor; 
+    min-width: 1200px;
+    position: relative;
+    
+    // justify-content: center;
+    div.flag{ 
+        line-height:50px ;
+        text-align: center; 
+        width: 150px;
+        height: 50px;
+        background-color: $primaryColor;
+        color: white;
+        position: absolute; 
+        left:23%; 
+        top: 0; 
+        transform: translate(-50%, -50%); 
+        
+        p{
+            vertical-align: middle; 
+            text-transform: uppercase;
+        }
+    }
+    div.comics-wrapper{ 
+        @include container;
+        flex-wrap: wrap;
+        div.cards{
+        margin: 2rem;
+        margin-top:4rem ;
+        width:200px;
+       img{
+           height: 100%;
+           
+       } 
+    }
+    
+    } 
 
     .btn{
         background-color: $primaryColor;
@@ -51,22 +98,3 @@ div.wrapper-main{
         }
     }
 } 
-section.main-jumbo{ 
-    height: 400px; 
-    background: url("../img/jumbotron.jpg") no-repeat; 
-    background-size:100%; 
-}
- 
-div.cards{ 
-    @include container;
-    flex-wrap: wrap; 
-    padding-top: 1.5rem; 
-    
-   
-
-    h1{
-        margin-top: 0;
-        color: yellow;
-    }
-}
- 

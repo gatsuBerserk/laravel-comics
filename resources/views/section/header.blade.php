@@ -14,6 +14,8 @@
                     </ul>
                 @endif 
             @endforeach
-        </nav>
-
-</div>
+        </nav> 
+</div> 
+<section class="jumbotron">
+    <figure></figure> 
+</section>

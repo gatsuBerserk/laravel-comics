@@ -1,7 +1,14 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 @mixin container{
-    width: 75%; 
+    width: 75%;  
+    min-width: 1200px;
     margin: 0 auto; 
     display: flex; 
     justify-content: space-around; 
     align-items: center; 
-}
+} 
+

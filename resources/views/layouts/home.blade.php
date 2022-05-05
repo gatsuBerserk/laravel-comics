@@ -13,7 +13,7 @@
        
         @include('section.header')
         
-            @yield('main')
+            @yield('comics')
         
              
       
