@@ -29,7 +29,7 @@ Route::get('/comics/{index}', function ($index) {
     // $nav = config("nav");
     $comics = config("comics");
     if(is_numeric($index) && $index >= 0 && $index < count($comics) ){
-        return view('section.singleComicBook', ["comic" => $comics[$index]]);
+        return view('section.singleComicBook', ["comicBook" => $comics[$index]]);
     }else{
         abort(404);
     }

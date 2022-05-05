@@ -1,7 +1,10 @@
 @extends("layouts.home") 
 
 @section("comics")
-<h1>
-    ancora non sono popolato!!!!!
-</h1>
+<div class="base">
+    <figure>
+        <img src="{{$comicBook ["thumb"]}}" alt="{{$comicBook["title"]}}">
+    </figure> 
+</div>
+{{-- @dump($comic) --}}
 @endsection
