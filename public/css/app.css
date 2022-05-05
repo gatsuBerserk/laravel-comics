@@ -6,20 +6,56 @@ div.header {
   align-items: center;
   padding-bottom: 1rem;
 }
-
 div.header li {
   list-style: none;
   margin: 1rem;
   display: inline-block;
 }
-
 div.header li :hover {
   color: rgb(2, 130, 249);
 }
-
 div.header a {
   text-decoration: none;
   color: black;
   text-transform: uppercase;
 }
 
+div.wrapper-main {
+  background-color: rgb(48, 48, 48);
+}
+div.wrapper-main .btn {
+  background-color: rgb(2, 130, 249);
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 1rem;
+  height: 30px;
+  width: 150px;
+  border: transparent;
+}
+div.wrapper-main .btn a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+div.wrapper-main .btn a:hover {
+  color: yellow;
+}
+
+section.main-jumbo {
+  height: 400px;
+  background: url("../img/jumbotron.jpg") no-repeat;
+  background-size: 100%;
+}
+
+div.cards {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 1.5rem;
+}
+div.cards h1 {
+  margin-top: 0;
+  color: yellow;
+}

@@ -26,3 +26,47 @@ div.header{
 
 }
 }
+
+div.wrapper-main{
+    background-color: $secondaryColor; 
+
+    .btn{
+        background-color: $primaryColor;
+        text-transform:uppercase; 
+        font-weight: bold;
+        margin: 1rem; 
+        height: 30px; 
+        width: 150px; 
+        border: transparent;
+
+        a{
+            text-decoration: none;
+            color: whitesmoke; 
+
+            &:hover{
+                color: yellow;
+            }
+
+
+        }
+    }
+} 
+section.main-jumbo{ 
+    height: 400px; 
+    background: url("../img/jumbotron.jpg") no-repeat; 
+    background-size:100%; 
+}
+ 
+div.cards{ 
+    @include container;
+    flex-wrap: wrap; 
+    padding-top: 1.5rem; 
+    
+   
+
+    h1{
+        margin-top: 0;
+        color: yellow;
+    }
+}
+ 

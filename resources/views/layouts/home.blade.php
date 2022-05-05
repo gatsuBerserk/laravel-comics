@@ -12,8 +12,10 @@
     <body> 
        
         @include('section.header')
-
-             @yield('main')
+        
+            @yield('main')
+        
+             
       
 
         @include("section.footer")

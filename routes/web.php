@@ -26,7 +26,7 @@ Route::get('header', function () {
 
 
 Route::get('main', function () {
-    
+    $nav = config("nav");
     $comics = config("comics");
-    return view('section.main', ["comics"=> $comics]);
+    return view('section.main', ["comics"=> $comics, "nav"=> $nav]);
 });
