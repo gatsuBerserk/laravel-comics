@@ -13,6 +13,7 @@
         @include('section.header')
         
         @yield('comics')
+        @yield("movies")
         
         @include("section.footer")
     </body>

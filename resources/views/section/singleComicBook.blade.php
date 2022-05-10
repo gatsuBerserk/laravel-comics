@@ -34,8 +34,74 @@
             </figure>
         </div>
 </div>
-<div class="artist">
-    
+<div class="writers">
+    <div class="wrapper-writers">
+        <div class="talent">
+            <h1>
+                Talent
+            </h1>
+            <div class="artist">
+                <h3>
+                    Artist by:
+                </h3>
+                <p>
+                    <a href="#">
+                        @foreach ($comicBook['artists'] as $items)
+                            {{ $items }},
+                        @endforeach
+                    </a>
+                </p>
+            </div>
+            <div class="artist">
+                <h3>
+                    Written bys:
+                </h3>
+                <p>
+                    <a href="#">
+                        @foreach ($comicBook['writers'] as $items)
+                            {{ $items }},
+                        @endforeach
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="specs">
+            <h1>
+                Specs
+            </h1> 
+             <div class="single-spec">
+                    <h3>
+                        Series:
+                    </h3>
+                    <p>
+                        <a href="#">
+                            {{$comicBook["series"]}}
+                        </a>
+                    </p>
+             </div>
+             <div class="single-spec">
+                <h3>
+                    U.S. Price:
+                </h3>
+                <p>
+                    <a href="#">
+                        {{$comicBook["price"]}}
+                    </a>
+                </p>
+         </div>
+         <div class="single-spec">
+            <h3>
+                On Sale Date:
+            </h3>
+            <p>
+                <a href="#">
+                    {{$comicBook["sale_date"]}}
+                </a>
+            </p>
+     </div>
+
+        </div>
+    </div>
 </div>
 {{-- @dump($comic) --}}
 @endsection

@@ -14,13 +14,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    // $nav = config("nav");
+    
     $comics = config("comics");
     return view('layouts.home', ["comics"=> $comics]);
 })-> name("home"); 
 
 Route::get('/comics', function () {
-    // $nav = config("nav");
     $comics = config("comics");
     return view('section.comics', ["comics"=> $comics]);
 })-> name("comics"); 
@@ -35,3 +34,8 @@ Route::get('/comics/{index}', function ($index) {
     }
     
 })-> name("comic-book");
+
+
+Route::get('/movies', function () {
+    return view('section.movies');
+})-> name("movies"); 

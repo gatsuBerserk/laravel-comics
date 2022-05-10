@@ -24,7 +24,11 @@
                         comics
                     </a>
                 </li>
-                <li><a href="#">movies</a></li>
+                <li>
+                    <a href="{{route("movies")}}">
+                        movies
+                    </a>
+                </li>
                 <li><a href="#">tv</a></li>
                 <li><a href="#">games</a></li>
                 <li><a href="#">collectibles</a></li>

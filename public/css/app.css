@@ -32,7 +32,7 @@ div.header a {
 }
 
 section.jumbotron {
-  height: 500px;
+  height: 400px;
 }
 section.jumbotron figure {
   height: 100%;
@@ -172,8 +172,123 @@ div.detail .adv h4 {
   text-transform: uppercase;
 }
 
-.artist {
+.writers {
   width: 100%;
-  height: 20px;
   background-color: rgb(246, 246, 246);
+}
+.writers .wrapper-writers {
+  width: 70%;
+  min-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+.writers .wrapper-writers .talent,
+.writers .wrapper-writers .specs {
+  width: calc(50% - 1rem);
+  margin: 0 auto;
+}
+.writers .wrapper-writers .talent h1,
+.writers .wrapper-writers .specs h1 {
+  border-bottom: 1px solid black;
+}
+.writers .wrapper-writers .talent .artist,
+.writers .wrapper-writers .talent .single-spec,
+.writers .wrapper-writers .specs .artist,
+.writers .wrapper-writers .specs .single-spec {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  border-bottom: 1px solid grey;
+}
+.writers .wrapper-writers .talent .artist p,
+.writers .wrapper-writers .talent .single-spec p,
+.writers .wrapper-writers .specs .artist p,
+.writers .wrapper-writers .specs .single-spec p {
+  text-align: start;
+  width: 50%;
+  margin-bottom: 1rem;
+}
+.writers .wrapper-writers .talent .artist p a,
+.writers .wrapper-writers .talent .single-spec p a,
+.writers .wrapper-writers .specs .artist p a,
+.writers .wrapper-writers .specs .single-spec p a {
+  text-decoration: none;
+}
+
+div.wrapper-jumbo {
+  background: url("/img/footer-bg.jpg") no-repeat;
+  background-size: 100%;
+  overflow: hidden;
+}
+div.wrapper-jumbo div.footer-jumbo {
+  width: 75%;
+  min-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  height: 400px;
+}
+div.wrapper-jumbo div.footer-jumbo .wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+div.wrapper-jumbo div.footer-jumbo div.list {
+  padding-right: 1.8rem;
+}
+div.wrapper-jumbo div.footer-jumbo h3 {
+  text-align: left;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+div.wrapper-jumbo div.footer-jumbo ul {
+  padding: 0;
+}
+div.wrapper-jumbo div.footer-jumbo li {
+  text-align: left;
+  list-style: none;
+  color: white;
+}
+div.wrapper-jumbo div.footer-jumbo a {
+  color: silver;
+  opacity: 0.5;
+  text-decoration: none;
+}
+div.wrapper-jumbo div.footer-jumbo a:hover {
+  color: yellow;
+}
+div.wrapper-jumbo div.footer-jumbo figure img {
+  height: 600px;
+}
+div.wrapper-jumbo section.social {
+  background-color: rgb(48, 48, 48);
+}
+div.wrapper-jumbo section.social div.sign-social {
+  width: 75%;
+  min-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+div.wrapper-jumbo section.social div.sign-social button {
+  margin: 1rem 0 1rem;
+  background-color: transparent;
+  color: white;
+  text-transform: uppercase;
+  height: 50px;
+  width: 150px;
+  border: 2px solid rgb(2, 130, 249);
+}
+div.wrapper-jumbo section.social div.sign-social div.social {
+  display: flex;
+}
+div.wrapper-jumbo section.social div.sign-social div.social h4 {
+  text-transform: uppercase;
+  color: rgb(2, 130, 249);
+}
+div.wrapper-jumbo section.social div.sign-social div.social img {
+  margin-left: 1rem;
 }
