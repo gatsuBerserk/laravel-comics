@@ -11,9 +11,15 @@
     </head>
     <body> 
         @include('section.header')
-        
+        @yield("characters")
         @yield('comics')
         @yield("movies")
+        @yield("tv") 
+        @yield("games")
+        @yield("collectibles")
+        @yield("videos")
+        @yield("fans")
+        @yield("news")
         
         @include("section.footer")
     </body>

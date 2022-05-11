@@ -1,6 +1,6 @@
 @extends("layouts.home")
 
-@section("movies") 
-    <section class="movies">
+@section("news") 
+    <section class="news">
     </section>
 @endsection

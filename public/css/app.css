@@ -216,6 +216,21 @@ div.detail .adv h4 {
   text-decoration: none;
 }
 
+section.characters,
+section.movies,
+section.tv,
+section.games,
+section.collectibles,
+section.videos,
+section.fans,
+section.news {
+  width: 100%;
+  height: 500px;
+  background: url("/img/work.jpg") no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+
 div.wrapper-jumbo {
   background: url("/img/footer-bg.jpg") no-repeat;
   background-size: 100%;

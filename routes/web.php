@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/characters', function () {
+    return view('section.characters');
+})-> name("characters");
+
 Route::get('/', function () {
     
     $comics = config("comics");
@@ -32,10 +36,32 @@ Route::get('/comics/{index}', function ($index) {
     }else{
         abort(404);
     }
-    
 })-> name("comic-book");
-
 
 Route::get('/movies', function () {
     return view('section.movies');
-})-> name("movies"); 
+})-> name("movies");
+
+Route::get('/tv', function () {
+    return view('section.tv');
+})-> name("tv");
+
+Route::get('/games', function () {
+    return view('section.games');
+})-> name("games");
+
+Route::get('/collectibles', function () {
+    return view('section.collectibles');
+})-> name("collectibles"); 
+
+Route::get('/videos', function () {
+    return view('section.videos');
+})-> name("videos"); 
+
+Route::get('/fans', function () {
+    return view('section.fans');
+})-> name("fans");  
+
+Route::get('/news', function () {
+    return view('section.news');
+})-> name("news"); 

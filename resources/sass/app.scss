@@ -208,7 +208,22 @@ div.detail{
         }
     }
 } 
+// blade Movies
 
+section.characters,
+section.movies, 
+section.tv, 
+section.games, 
+section.collectibles, 
+section.videos, 
+section.fans, 
+section.news{
+    width: 100%;
+    height: 500px;
+    background: url("/img/work.jpg") no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
 
 
 // footer

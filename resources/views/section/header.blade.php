@@ -17,7 +17,7 @@
         </nav>  --}}
         <nav>
             <ul>
-                <li><a href="#">characters</a> </li>
+                <li><a href="{{route("characters")}}">characters</a> </li>
                 <li class="{{Route::currentRouteName() == 'comics' ? 'active' : ''}}" >
                     <a 
                          href="{{route("comics")}}"> 
@@ -29,12 +29,12 @@
                         movies
                     </a>
                 </li>
-                <li><a href="#">tv</a></li>
-                <li><a href="#">games</a></li>
-                <li><a href="#">collectibles</a></li>
-                <li><a href="#">videos</a></li>
-                <li><a href="#">fans</a></li>
-                <li><a href="#"news></a></li>
+                <li><a href="{{route("tv")}}">tv</a></li>
+                <li><a href="{{route("games")}}">games</a></li>
+                <li><a href="{{route("collectibles")}}">collectibles</a></li>
+                <li><a href="{{route("videos")}}">videos</a></li>
+                <li><a href="{{route("fans")}}">fans</a></li>
+                <li><a href="{{route("news")}}">news</a></li>
                 <li><a href="#">shop</a></li>
             </ul>
         </nav>
